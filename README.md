@@ -28,6 +28,8 @@ git clone https://github.com/vuejs/vue-next.git
 
 This is more intuitive way and closer to a real app.
 
+If you want to have a quick start (30 seconds) instead of compiling yourself (5 minutes),  simply fork and clone this repo, then open `src/main.html`. Otherwise:
+
 #### Step 1: create sourcemap
 
 Create `sourcemap` so that the example html could have reference to.

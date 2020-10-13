@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="./vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      console.log(Vue)
+      const ref = Vue.ref
+      const App = {
+        template: `
+          <div>Count: {{ count }}</div>
+          <button @click="increment">Increment</button>
+        `,
+        setup () {
+          const count = ref(0)
+          function increment() {
+            count.value += 1
+          }
+          return { count, increment }
+        }
+      }
+      let vm = Vue.createApp(App).mount('#app')
+      console.log(vm)
+    </script>
+  </body>
+</html>
